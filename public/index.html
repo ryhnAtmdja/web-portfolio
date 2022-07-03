@@ -10,13 +10,14 @@
   <body>
     <!-- Navbar -->
     <header
+      id="nav"
       class="bg-transparent absolute top-0 w-full flex left-0 items-center z-10"
     >
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4 flex items-center">
             <img
-              src="../src/img/pp_new.png "
+              src="../src/img/pp_new.png"
               alt=""
               class="w-9 h-9 rounded-full"
             />
@@ -29,20 +30,31 @@
           <div class="flex items-center px-4">
             <button
               type="button"
-              class="block absolute right-4"
+              class="block absolute right-4 lg:hidden"
               id="hamburger"
               name="hamburger"
             >
               <span
-                class="hamburger-line transition duration-300 ease-in-out"
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
               ></span>
               <span
                 class="hamburger-line1 transition duration-300 ease-in-out"
               ></span>
               <span
-                class="hamburger-line2 transition duration-300 ease-in-out"
+                class="hamburger-line2 transition duration-300 ease-in-out origin-bottom-left"
               ></span>
             </button>
+            <nav
+              id="navlists"
+              class="hidden absolute right-4 top-full max-w-full bg-white shadow-lg w-full py-5 px-3 lg:block lg:static lg:bg-transparent lg:shadow-none lg:max-w-full"
+            >
+              <ul class="block text-center lg:flex">
+                <li><a href="" class="list-item">Home</a></li>
+                <li><a href="" class="list-item">About</a></li>
+                <li><a href="" class="list-item">Contacts</a></li>
+                <li><a href="" class="list-item">Projects</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>

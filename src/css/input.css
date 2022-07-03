@@ -6,6 +6,12 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.nav-scrolled {
+  @apply fixed z-[999] bg-white bg-opacity-70;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 -1px inset rgba(0, 0, 0, 0.1);
+}
+
 .hamburger-line {
   @apply bg-black w-[30px] my-2 h-[2px] block rounded-md;
 }
@@ -19,7 +25,7 @@ body {
 }
 
 .hamburger-active > span:nth-child(1) {
-  @apply rotate-45 origin-top-left;
+  @apply rotate-45;
 }
 
 .hamburger-active > span:nth-child(2) {
@@ -27,5 +33,10 @@ body {
 }
 
 .hamburger-active > span:nth-child(3) {
-  @apply w-[30px] -rotate-45 origin-bottom-left rounded-md;
+  @apply w-[30px] -rotate-45  rounded-md;
+}
+
+/* nav lists */
+.list-item {
+  @apply py-10 mx-8 text-slate-800 text-base transition ease-in-out hover:text-primary;
 }
