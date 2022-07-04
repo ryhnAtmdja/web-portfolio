@@ -351,7 +351,7 @@
             You can send me a message, just fill form below
           </p>
         </div>
-        <div class="mt-10 px-4">
+        <div class="mt-10 px-4 lg:px-32">
           <div class="mb-4 w-full">
             <form action="">
               <label
@@ -363,7 +363,7 @@
                 type="text"
                 id="name"
                 name="name"
-                class="bg-slate-200 w-full py-2 px-3 rounded-md text-slate-700 leading-tight focus:outline-primary"
+                class="bg-slate-200 w-full py-2 px-3 rounded-md text-slate-700 leading-tight focus:outline-primary lg:py-4"
                 placeholder=""
               />
             </form>
@@ -379,7 +379,7 @@
                 type="email"
                 id="email"
                 name="email"
-                class="bg-slate-200 w-full py-2 px-3 rounded-md text-slate-700 leading-tight focus:outline-primary"
+                class="bg-slate-200 w-full py-2 px-3 rounded-md text-slate-700 leading-tight focus:outline-primary lg:py-4"
               />
             </form>
           </div>
@@ -391,20 +391,22 @@
                 >Message</label
               >
               <textarea
-                rows="4"
+                rows="6"
                 type="text"
                 id="message"
                 name="message"
-                class="bg-slate-200 w-full py-2 px-3 rounded-md text-slate-700 leading-tight focus:outline-primary focus:"
+                class="bg-slate-200 w-full py-2 px-3 rounded-md text-slate-700 leading-tight focus:outline-primary"
               ></textarea>
             </form>
           </div>
-          <button
-            class="text-base bg-primary px-8 py-3 rounded-full text-white flex items-center justify-center transition ease-in delay-25 hover:bg-emerald-700 shadow-lg space-x-2"
-          >
-            <i class="fa-solid fa-paper-plane"></i>
-            <p>Send</p>
-          </button>
+          <div class="flex justify-center">
+            <button
+              class="text-base bg-primary px-8 py-3 rounded-full text-white flex items-center justify-center transition ease-in delay-25 hover:bg-emerald-700 shadow-lg space-x-2"
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+              <p>Send</p>
+            </button>
+          </div>
         </div>
       </div>
     </section>
