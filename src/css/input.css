@@ -38,5 +38,5 @@ body {
 
 /* nav lists */
 .list-item {
-  @apply py-10 mx-8 text-slate-800 text-base transition ease-in-out hover:text-primary;
+  @apply py-7 mx-4 text-slate-800 text-base transition ease-in-out hover:text-primary;
 }
