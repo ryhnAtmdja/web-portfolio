@@ -40,3 +40,8 @@ body {
 .list-item {
   @apply py-7 mx-4 text-slate-800 text-base transition ease-in-out hover:text-primary;
 }
+
+/* footer */
+.list-link {
+  @apply transition ease-in-out duration-200 hover:opacity-70;
+}
